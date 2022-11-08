@@ -31,7 +31,7 @@ public class ClientManager : MonoBehaviour
     void Start()
     {
         //接続処理。接続先サーバと、ポート番号を指定する
-        ws = new WebSocket("ws://192.168.0.15:12345/");
+        ws = new WebSocket("ws://192.168.0.16:12345/");
         ws.Connect();
 
         //送信ボタンが押されたときに実行する処理「SendText」を登録する
