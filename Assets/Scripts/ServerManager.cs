@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using WebSocketSharp;
-using WebSocketSharp.Net;
 using WebSocketSharp.Server;
+//using WebSocketSharp.Net;
 public class ServerManager : MonoBehaviour
 {
     WebSocketServer ws;
@@ -21,6 +21,7 @@ public class ServerManager : MonoBehaviour
         Debug.Log("サーバ停止");
         ws.Stop();
     }
+
     public class ExWebSocketBehavior : WebSocketBehavior
     {
         //誰が現在接続しているのか管理するリスト。
